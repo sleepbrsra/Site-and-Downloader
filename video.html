@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>d0lph$n</title>
+  <link rel="stylesheet" href="/styles_video.css">
+</head>
+<body>
+  <div class="video-container">
+    <video controls class="video-player" id="videoPlayer">
+      <source src="" type="">
+      Ваш браузер не поддерживает видео тег.
+    </video>
+  </div>
+  <script>
+    // Получаем параметры URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const videoPath = urlParams.get('path');
+
+    if (videoPath) {
+      const videoPlayer = document.getElementById('videoPlayer');
+      videoPlayer.src = videoPath;
+      videoPlayer.type = `video/${videoPath.split('.').pop()}`;
+    } else {
+      alert('Видео не найдено!');
+    }
+  </script>
+</body>
+</html>

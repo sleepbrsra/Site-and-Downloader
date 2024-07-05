@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.video-container {
+  max-width: 80%; /* максимальная ширина плеера */
+}
+
+video {
+  width: 100%; /* полная ширина видео в контейнере */
+  height: auto; /* автоматическая высота */
+  display: block;
+  margin: 0 auto; /* центрирование по горизонтали */
+  border-radius: 10px; /* закругление углов */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* тень */
+}
