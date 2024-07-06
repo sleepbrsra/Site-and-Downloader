@@ -11,14 +11,19 @@ yt_dlp / node js / python / html / css / js
 // Windows // Linux
 
 npm install express body-parser cookie debug socket.io
+
 pip install yt_dlp
 ------------
 
 ------------
 // Arh Linux
+
 python -m venv venv
+
 source venv/bin/activate
+
 npm install express body-parser cookie debug socket.io
+
 pip install yt_dlp
 ------------
 
